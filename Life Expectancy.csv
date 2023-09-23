@@ -18,7 +18,7 @@ Bangladesh,72.3811
 Bulgaria,71.798
 Bahrain,78.7605
 Bahamas,71.5983
-Bosnia and Herzegovina,75.3003
+Bosnia and Herz,75.3003
 Belarus,72.438
 Belize,70.4697
 Bolivia,63.6304
@@ -47,7 +47,7 @@ Germany,80.6301
 Djibouti,62.3049
 Dominica,72.814
 Denmark,81.3753
-Dominican Republic,72.6146
+Dominican Rep.,72.6146
 Algeria,76.3767
 Ecuador,73.67
 Egypt,70.2207
@@ -113,7 +113,7 @@ Madagascar,64.4853
 Maldives,79.9182
 Mexico,70.2127
 Marshall Islands,65.2688
-North Macedonia,73.8415
+Macedonia,73.8415
 Mali,58.9414
 Malta,83.7769
 Myanmar,65.6716
@@ -158,6 +158,7 @@ Sierra Leone,60.0624
 El Salvador,70.7479
 San Marino,80.8786
 Somalia,55.2803
+Somaliland,55.1267
 Serbia,74.1923
 S. Sudan,54.9752
 Sao Tome and Principe,67.5912
