@@ -17,7 +17,8 @@
     "encoding": {
       "x": {
         "field": "Country",
-        "type": "nominal"
+        "type": "nominal",
+        "title": "Top 10 Countries"
       },
       "y": {
         "field": "Life Expectancy at Birth (2021)",
@@ -37,5 +38,6 @@
       {
         "filter": {"field": "rank", "lte": 10}
       }
-    ]
+    ],
+    "config": {"background":"transparent"}
   }
