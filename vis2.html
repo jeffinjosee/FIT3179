@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Life Expectancy 2021</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+                
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consistent Size Page</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    width: 1400px;
+    margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin: 30px;
+            padding: 20px; 
+            background-color: #f2f2f2;
+            border: 0px solid #ccc;
+        }
+
+        footer {
+            color: black;
+            margin-top: 10px;
+            padding: 1px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px; 
+            padding: 10px;
+        }     
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+            color: lightcoral;
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+
+       
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Global Life Expectancy in 2021</h1>
+        <p> Life expectancy is a statistical measure used to estimate the average number of years a person or a population is expected to live based on various factors, including their <b>birth</b> <b>year</b>, <b>sex</b>, <b>education</b> and other demographic characteristics. 
+            It is a critical indicator of overall health and well-being in a given region or for a specific group of people. Life expectancy is often used by <i>governments</i>, <i>health</i> <i>organizations</i>, and <i>researchers</i> to assess the overall health and quality of life of a population.
+        </p> 
+
+        <div>
+            <div id="vis1" class="vis-container"></div>
+          </div>
+       <p>
+        Countries with the highest and lowest life expectancies present a stark contrast in terms of quality of life and healthcare. 
+        In nations with the highest life expectancies, such as <b>Japan</b>,<b> Switzerland</b>, and <b>Australia</b>, citizens enjoy long and healthy lives, often well into their 80s or 90s. 
+        These countries typically offer excellent <i>healthcare</i>, <i>nutrition</i>, and <i>lifestyle</i> <i>choices</i>, which contribute to their impressive life expectancy statistics. 
+        They also prioritize preventive healthcare and public health initiatives.
+        </p>
+        <p>
+        Conversely, countries with the lowest life expectancies, such as several <b>sub-Saharan</b> <b>African</b> nations, grapple with significant challenges. 
+        Factors like <i>inadequate</i> <i>healthcare</i> <i>infrastructure</i>, <i>high</i> <i>rates</i> <i>of</i> <i>infectious</i> <i>diseases</i> and <i>malnutrition</i> contribute to shorter lifespans. 
+        Additionally, <u>political</u> <u>instability</u> and <u>socio-economic</u> <u>disparities</u> exacerbate the problem.
+        </p>
+      
+       <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class="description description-left">
+            <h3>Highest Life Expectancies Around the Globe</h3>
+            <p>
+                Some of the healthiest and most developed nations in the world are represented among the nations with the greatest life expectancy rates. 
+                The emphasis placed on healthcare, education, and general quality of life accounts for these nations' remarkable life expectancy figures. 
+                These nations provide a model for raising life expectancy by prioritising healthcare, education, and general well-being in policy. 
+                They set an example for other countries to follow in raising living standards and lengthening the number of years that people can be productive and healthy.
+               </p> 
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+            <div id="vis3"></div>
+        </div>
+      </div>
+
+
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+              <div id="vis2"></div>
+            </div>
+            <div class="pure-u-1-3">
+              <div class="description description-right">
+                <h3>The Intersectionality of Life Expectancy and Human Development Index (HDI) Rank</h3>
+                
+                <p>The intricate connection between health and overall human development is highlighted by the intersection between life expectancy and HDI score. 
+                    A significant indicator in the HDI that reflects the importance of the health factor is life expectancy. 
+                    This intersection makes it clear that a country's progress is closely related to the health and lifespan of its people. Life expectancy often increases with HDI rank, highlighting the importance of healthcare, income, and education access for improving people's overall quality of life. 
+                    The significance of a multifaceted approach to human development that prioritises health alongside other crucial elements is shown by the intersectionality of these factors.
+                </p> 
+              </div>
+            </div>
+          </div>
+
+          <h2></h2>
+          
+          <div class="pure-g">
+            <div class="pure-u-1-2">
+              <div class="description description-left">
+                <h3>Exploration of Countries with Lowest Life Expectancies</h3>
+                <p>The nations with the lowest life expectancies, such as those in sub-Saharan Africa, often grapple with a multitude of challenges. 
+                    These include inadequate healthcare, rampant infectious diseases, limited access to clean water, food shortages, political instability, and socio-economic disparities. 
+                    This results in shorter lives for their populations. One important tool to address and track progress in these areas is the Human Development Index (HDI) rank. 
+                    By focusing on healthcare, education, and income, the HDI provides a framework for improvement, offering a path to enhance the overall well-being and life expectancy of citizens in these nations.</p>
+                </p>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div id="vis4"></div>
+            </div>
+          </div>
+          
+
+      
+
+          <div class="pure-g">
+            <div class="pure-u-1-2">
+              <div id="vis5"></div>
+            </div>
+          
+            <div class="pure-u-1-2">
+              <h3>The Importance of Human Development Groups</h3>
+              <p>
+                Human Development Groups categorize countries based on their Human Development Index (HDI) scores, which incorporate life expectancy, education, and income as core indicators. 
+                Nations are classified into four main categories: Low, Medium, High, and Very High. These classifications serve as a critical gauge of a nation's overall development.
+              </p>
+              <p>In this context, life expectancy plays a pivotal role. 
+                Low HDI countries often face challenges in providing healthcare, education, and economic opportunities, resulting in lower life expectancies. 
+                In contrast, Very High HDI nations boast longer life expectancies, as their populations benefit from robust healthcare systems, advanced education, and higher living standards. 
+                These classifications provide a lens through which we can understand the intricate connection between human development, as reflected by HDI scores, and life expectancy.</p>
+            </div>
+          </div>
+          
+          
+          
+
+    <footer>
+        <p>
+            <i>Created by Jeffin Jose 31452620</i>
+                
+            </p>
+    </footer>
+
+
+    <script type="text/javascript">
+        var specVis1 = "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/map_2021.js";
+        var specVis2 = "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/hdi_2021.js" ;
+        var specVis3 = "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/top10_2021.js";
+        var specVis4 = "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/low10_2021.js";
+        var specVis5 = "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/piechart.js";
+
+    
+        vegaEmbed('#vis1', specVis1, { "actions": false });
+    
+        vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    
+        vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    
+        vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+      </script>    
+</body>
+</html>
