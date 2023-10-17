@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Life Expectancy at Birth by HDI Rank (2021)",
-    "width": 500,
+    "width": 600,
     "height": 400,
     "data": {
       "url": "https://raw.githubusercontent.com/jeffinjosee/FIT3179/main/Life_Expectancy_at_Birth1.csv"
