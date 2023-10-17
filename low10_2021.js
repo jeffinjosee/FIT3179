@@ -35,7 +35,6 @@
     {
       "filter": {"field": "rank", "lte": 10}
     }
-  ],
-  "config": {"background": "transparent"}
-}
-
+    ],
+    "config": {"background":"transparent"}
+  }
