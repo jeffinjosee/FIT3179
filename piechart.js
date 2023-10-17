@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Percentage of Countries by Human Development Group",
+    "title": "Percentage of Countries by Human Development Groups",
     "width": 400,
     "height": 400,
     "data": {
